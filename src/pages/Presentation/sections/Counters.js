@@ -30,13 +30,10 @@ Nuestra experiencia abarca desde la configuración de funcionalidades estándar 
               count={8}
               suffix="+"
               title="Certificaciones"
-              description="Excelencia técnica respaldada por credenciales reconocidas
-Nuestro equipo está avalado con certificaciones oficiales de Salesforce, que reflejan un dominio integral en el ecosistema de la plataforma. Estas incluyen: 
-Salesforce AI Specialist y AI Associate, expertos en soluciones basadas en inteligencia artificial.
-Salesforce Field Service Consultant, especializado en optimización de operaciones de campo.
-Sales Cloud Consultant y Service Cloud Consultant, con enfoque en la gestión de ventas y atención al cliente.
-Platform App Builder y Administrator, que garantizan capacidad para configurar, personalizar y administrar la plataforma.
-Estas credenciales aseguran un enfoque estratégico y altamente técnico en cada solución implementada."
+              subtitle="Excelencia técnica respaldada por credenciales reconocidas"
+              description="Nuestro equipo está compuesto por profesionales certificados en Salesforce, lo que garantiza un dominio integral de la plataforma y una capacidad comprobada para ofrecer soluciones de alto impacto.
+Estas certificaciones oficiales reflejan no solo el conocimiento técnico profundo, sino también nuestra dedicación para mantenernos actualizados en las últimas tendencias e innovaciones dentro del ecosistema de Salesforce.
+Contamos con certificaciones que validan nuestra experiencia en inteligencia artificial para potenciar decisiones y personalizar experiencias, optimización de operaciones de campo, transformación de procesos de ventas y servicio al cliente, así como habilidades avanzadas en configuración y personalización de la plataforma, adaptándonos a las necesidades específicas de cada negocio."
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
@@ -45,8 +42,10 @@ Estas credenciales aseguran un enfoque estratégico y altamente técnico en cada
               count={4}
               suffix="+"
               title="Industrias"
-              description="Trayectoria comprobada en sectores clave
-Nuestros expertos han desarrollado proyectos del sector inmobiliario, financiero, automotriz y bienes de consumo, integrando tecnología y estrategia para optimizar operaciones y alcanzar los objetivos de negocio de cada cliente."
+              subtitle="Trayectoria comprobada en sectores clave"
+              description="Nuestro equipo destaca por su dominio en el ecosistema Salesforce, implementando soluciones que aprovechan al máximo las capacidades de plataformas como Sales Cloud y Service Cloud en diversos sectores, incluyendo el automotriz, bienes de consumo, financiero, inmobiliario y más. 
+Gracias a nuestro conocimiento especializado, hemos diseñado estrategias personalizadas que optimizan procesos clave, mejoran la experiencia del cliente y potencian el crecimiento de los negocios. 
+Esta trayectoria nos permite adaptarnos a las necesidades específicas de cada industria, asegurando resultados que generan valor a largo plazo."
             />
           </Grid>
         </Grid>
