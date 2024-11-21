@@ -1,11 +1,11 @@
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+// import Container from "@mui/material/Container";
+// import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// import MKTypography from "components/MKTypography";
 // import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
@@ -30,6 +30,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/background.jpg";
+import logo from "assets/images/logo-transparent.png";
 
 // const date = new Date().getFullYear();
 
@@ -57,7 +58,17 @@ function Presentation() {
           placeItems: "center",
         }}
       >
-        <Container>
+        <MKBox
+          component="img"
+          src={logo}
+          alt="pattern-lines"
+          position="center"
+          top={0}
+          left={0}
+          width="50%"
+        />
+
+        {/* <Container>
           <Grid container item xs={12} lg={5} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
@@ -82,7 +93,7 @@ function Presentation() {
               Frase motivadora o slogan
             </MKTypography>
           </Grid>
-        </Container>
+        </Container> */}
       </MKBox>
       <Card
         sx={{
