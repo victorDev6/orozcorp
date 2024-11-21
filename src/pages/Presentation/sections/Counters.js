@@ -20,8 +20,7 @@ function Counters() {
               title="Años de experiencia"
               subtitle="Expertos en soluciones Salesforce en la nube"
               description="Contamos con especialistas altamente capacitados y con más de tres años de experiencia en el desarrollo e implementación de soluciones Salesforce.
-Nuestro equipo domina un amplio espectro de plataformas, incluyendo Sales Cloud, enfocada en la optimización del ciclo de ventas, y Service Cloud, diseñada para elevar la calidad del servicio al cliente mediante herramientas innovadoras y personalizadas.
-Nuestra experiencia abarca desde la configuración de funcionalidades estándar hasta la creación de soluciones completamente adaptadas a las necesidades específicas de cada negocio."
+Nuestro equipo domina un amplio espectro de plataformas, incluyendo Sales Cloud, enfocada en la optimización del ciclo de ventas, y Service Cloud, diseñada para elevar la calidad del servicio al cliente mediante herramientas innovadoras y personalizadas."
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
@@ -32,8 +31,7 @@ Nuestra experiencia abarca desde la configuración de funcionalidades estándar 
               title="Certificaciones"
               subtitle="Excelencia técnica respaldada por credenciales reconocidas"
               description="Nuestro equipo está compuesto por profesionales certificados en Salesforce, lo que garantiza un dominio integral de la plataforma y una capacidad comprobada para ofrecer soluciones de alto impacto.
-Estas certificaciones oficiales reflejan no solo el conocimiento técnico profundo, sino también nuestra dedicación para mantenernos actualizados en las últimas tendencias e innovaciones dentro del ecosistema de Salesforce.
-Contamos con certificaciones que validan nuestra experiencia en inteligencia artificial para potenciar decisiones y personalizar experiencias, optimización de operaciones de campo, transformación de procesos de ventas y servicio al cliente, así como habilidades avanzadas en configuración y personalización de la plataforma, adaptándonos a las necesidades específicas de cada negocio."
+Estas certificaciones oficiales reflejan no solo el conocimiento técnico profundo, sino también nuestra dedicación para mantenernos actualizados en las últimas tendencias e innovaciones dentro del ecosistema de Salesforce."
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
@@ -44,8 +42,7 @@ Contamos con certificaciones que validan nuestra experiencia en inteligencia art
               title="Industrias"
               subtitle="Trayectoria comprobada en sectores clave"
               description="Nuestro equipo destaca por su dominio en el ecosistema Salesforce, implementando soluciones que aprovechan al máximo las capacidades de plataformas como Sales Cloud y Service Cloud en diversos sectores, incluyendo el automotriz, bienes de consumo, financiero, inmobiliario y más. 
-Gracias a nuestro conocimiento especializado, hemos diseñado estrategias personalizadas que optimizan procesos clave, mejoran la experiencia del cliente y potencian el crecimiento de los negocios. 
-Esta trayectoria nos permite adaptarnos a las necesidades específicas de cada industria, asegurando resultados que generan valor a largo plazo."
+Gracias a nuestro conocimiento especializado, hemos diseñado estrategias personalizadas que optimizan procesos clave, mejoran la experiencia del cliente y potencian el crecimiento de los negocios."
             />
           </Grid>
         </Grid>
