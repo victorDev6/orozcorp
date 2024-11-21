@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+// import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -44,7 +44,7 @@ function DesignBlocks() {
 
   return (
     <MKBox component="section" my={6} py={6}>
-      <Container>
+      {/* <Container>
         <Grid
           container
           item
@@ -69,7 +69,7 @@ function DesignBlocks() {
             perfect pages.
           </MKTypography>
         </Grid>
-      </Container>
+      </Container> */}
       <Container sx={{ mt: 6 }}>{renderData}</Container>
     </MKBox>
   );

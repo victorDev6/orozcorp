@@ -19,7 +19,6 @@ function DefaultCounterCard({ color, count, title, subtitle, description, ...res
         </MKTypography>
       )}
       {subtitle && (
-        // <p>{subtitle}</p>
         <MKTypography variant="h6" mt={2} mb={1}>
           {subtitle}
         </MKTypography>
