@@ -4,97 +4,34 @@ const imagesPrefix =
 export default [
   {
     title: "Servicios",
-    description: "A selection of 45 page sections that fit perfectly in any combination",
+    description: "",
     items: [
       {
         image: `${imagesPrefix}/headers.jpg`,
-        name: "Page Headers",
-        count: 10,
+        name: "Quickstart",
+        count:
+          "En Orozcorp Consulting, entendemos las necesidades de pequeñas y medianas empresas que buscan una implementación rápida y efectiva de Salesforce. Por ello, ofrecemos nuestro servicio Quickstart, diseñado para desarrollar e implementar soluciones en Sales Cloud, Service Cloud y otras nubes clave en un plazo reducido. Este enfoque ágil permite a las empresas comenzar a aprovechar los beneficios de Salesforce de manera inmediata, optimizando procesos y potenciando su crecimiento desde el inicio.",
         route: "/sections/page-sections/page-headers",
       },
       {
         image: `${imagesPrefix}/features.jpg`,
-        name: "Features",
-        count: 14,
+        name: "Implementación Salesforce",
+        count:
+          "Impulsamos la transformación digital de tu negocio con proyectos integrales diseñados a medida. Aprovechamos las capacidades de las herramientas de Salesforce Customer 360, como Sales Cloud y Service Cloud, para optimizar procesos, mejorar la experiencia del cliente y acelerar el crecimiento de tu empresa. Nuestra metodología personalizada garantiza que cada solución se adapte a las necesidades y objetivos específicos de tu organización.",
         route: "/sections/page-sections/features",
       },
       {
         image: `${imagesPrefix}/pricing.jpg`,
-        name: "Pricing",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/faq.jpg`,
-        name: "FAQ",
-        count: 1,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/blogs.jpg`,
-        name: "Blog Posts",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/testimonials.jpg`,
-        name: "Testimonials",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/teams.jpg`,
-        name: "Teams",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/stats.jpg`,
-        name: "Stats",
-        count: 3,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/call-to-action.jpg`,
-        name: "Call to Actions",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/projects.jpg`,
-        name: "Applications",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/logo-area.jpg`,
-        name: "Logo Areas",
-        count: 4,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/footers.jpg`,
-        name: "Footers",
-        count: 10,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/general-cards.jpg`,
-        name: "General Cards",
-        count: 9,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/content-sections.jpg`,
-        name: "Content Sections",
-        count: 8,
+        name: "Consultoría y soporte",
+        count:
+          "Brindamos asesoría estratégica y soporte ágil para ayudarte a sacar el máximo provecho de Salesforce. Resolvemos tus consultas, optimizamos tus herramientas y potenciamos tus procesos, adaptándonos a las necesidades específicas de tu negocio. Nuestro enfoque garantiza resultados efectivos que impulsan la productividad, mejoran la experiencia del cliente y te ayudan a alcanzar tus objetivos con confianza.",
         pro: true,
       },
     ],
   },
   {
     title: "Acerca de nosotros",
-    description: "30+ components that will help go through the pages",
+    description: "",
     items: [
       {
         image: `${imagesPrefix}/navbars.jpg`,
