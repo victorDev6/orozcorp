@@ -56,6 +56,20 @@ function Presentation() {
           backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "75%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Capa negra con opacidad
+            zIndex: 1, // Sitúa la capa debajo del contenido
+          },
+          "& > *": {
+            position: "relative", // Asegura que el contenido quede sobre la capa oscura
+            zIndex: 2,
+          },
         }}
       >
         <MKBox
@@ -101,6 +115,7 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          zIndex: 3,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
