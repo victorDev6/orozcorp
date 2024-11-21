@@ -1,19 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
 // react-countup component
@@ -23,7 +7,7 @@ import CountUp from "react-countup";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultCounterCard({ color, count, title, description, ...rest }) {
+function DefaultCounterCard({ color, count, title, subtitle, description, ...rest }) {
   return (
     <MKBox p={2} textAlign="center" lineHeight={1}>
       <MKTypography variant="h1" color={color} textGradient>
@@ -32,6 +16,12 @@ function DefaultCounterCard({ color, count, title, description, ...rest }) {
       {title && (
         <MKTypography variant="h5" mt={2} mb={1}>
           {title}
+        </MKTypography>
+      )}
+      {subtitle && (
+        // <p>{subtitle}</p>
+        <MKTypography variant="h6" mt={2} mb={1}>
+          {subtitle}
         </MKTypography>
       )}
       {description && (
@@ -48,6 +38,7 @@ DefaultCounterCard.defaultProps = {
   color: "info",
   description: "",
   title: "",
+  subtitle: "",
 };
 
 // Typechecking props for the DefaultCounterCard
@@ -65,6 +56,7 @@ DefaultCounterCard.propTypes = {
   count: PropTypes.number.isRequired,
   title: PropTypes.string,
   description: PropTypes.string,
+  subtitle: PropTypes.string,
 };
 
 export default DefaultCounterCard;

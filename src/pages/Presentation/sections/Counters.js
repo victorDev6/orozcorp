@@ -18,22 +18,14 @@ function Counters() {
               count={3}
               suffix="+"
               title="Años de experiencia"
-              description="Expertos en soluciones Salesforce en la nube
-Contamos con especialistas con más de tres años de experiencia desarrollando e implementando soluciones en plataformas como Sales Cloud, Service Cloud. Dominan automatizaciones, adaptaciones personalizadas así como las funcionalidades estándar, asegurando resultados que transforman procesos empresariales."
+              subtitle="Expertos en soluciones Salesforce en la nube"
+              description="Contamos con especialistas altamente capacitados y con más de tres años de experiencia en el desarrollo e implementación de soluciones Salesforce.
+Nuestro equipo domina un amplio espectro de plataformas, incluyendo Sales Cloud, enfocada en la optimización del ciclo de ventas, y Service Cloud, diseñada para elevar la calidad del servicio al cliente mediante herramientas innovadoras y personalizadas.
+Nuestra experiencia abarca desde la configuración de funcionalidades estándar hasta la creación de soluciones completamente adaptadas a las necesidades específicas de cada negocio."
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
-            <DefaultCounterCard
-              count={4}
-              suffix="+"
-              title="Industrias"
-              description="Trayectoria comprobada en sectores clave
-Nuestros expertos han desarrollado proyectos del sector inmobiliario, financiero, automotriz y bienes de consumo, integrando tecnología y estrategia para optimizar operaciones y alcanzar los objetivos de negocio de cada cliente."
-            />
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
-          </Grid>
-          <Grid item xs={12} md={4}>
             <DefaultCounterCard
               count={8}
               suffix="+"
@@ -45,6 +37,16 @@ Salesforce Field Service Consultant, especializado en optimización de operacion
 Sales Cloud Consultant y Service Cloud Consultant, con enfoque en la gestión de ventas y atención al cliente.
 Platform App Builder y Administrator, que garantizan capacidad para configurar, personalizar y administrar la plataforma.
 Estas credenciales aseguran un enfoque estratégico y altamente técnico en cada solución implementada."
+            />
+            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <DefaultCounterCard
+              count={4}
+              suffix="+"
+              title="Industrias"
+              description="Trayectoria comprobada en sectores clave
+Nuestros expertos han desarrollado proyectos del sector inmobiliario, financiero, automotriz y bienes de consumo, integrando tecnología y estrategia para optimizar operaciones y alcanzar los objetivos de negocio de cada cliente."
             />
           </Grid>
         </Grid>
