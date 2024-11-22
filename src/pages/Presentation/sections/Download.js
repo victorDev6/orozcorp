@@ -93,7 +93,7 @@ function Download() {
                 },
               })}
             >
-              Enviar un Correo
+              Contáctanos
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -142,9 +142,9 @@ function Download() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
-                    label="Nombre*"
+                    label="Nombre"
                     name="first_name"
-                    value={formData.firstName}
+                    value={formData.first_name}
                     onChange={handleChange}
                     fullWidth
                     required
@@ -158,9 +158,9 @@ function Download() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
-                    label="Apellidos*"
+                    label="Apellidos"
                     name="last_name"
-                    value={formData.lastName}
+                    value={formData.last_name}
                     onChange={handleChange}
                     fullWidth
                     required
@@ -174,7 +174,7 @@ function Download() {
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
-                    label="Compañía*"
+                    label="Compañía"
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
@@ -190,7 +190,7 @@ function Download() {
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
-                    label="Email*"
+                    label="Email"
                     name="email"
                     type="email"
                     value={formData.email}
