@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import PropTypes from "prop-types";
 
 // react-countup component
@@ -7,10 +8,10 @@ import CountUp from "react-countup";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultCounterCard({ color, count, title, subtitle, description, ...rest }) {
+function DefaultCounterCard({ count, title, subtitle, description, ...rest }) {
   return (
     <MKBox p={2} textAlign="center" lineHeight={1}>
-      <MKTypography variant="h1" color={color} textGradient>
+      <MKTypography variant="h1" sx={{ color: "#DAA520" }}>
         <CountUp end={count} duration={1} {...rest} />
       </MKTypography>
       {title && (
@@ -34,7 +35,7 @@ function DefaultCounterCard({ color, count, title, subtitle, description, ...res
 
 // Setting default props for the DefaultCounterCard
 DefaultCounterCard.defaultProps = {
-  color: "info",
+  color: "",
   description: "",
   title: "",
   subtitle: "",
@@ -42,16 +43,17 @@ DefaultCounterCard.defaultProps = {
 
 // Typechecking props for the DefaultCounterCard
 DefaultCounterCard.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "light",
-    "dark",
-  ]),
+  // color: PropTypes.oneOf([
+  //   "primary",
+  //   "secondary",
+  //   "info",
+  //   "success",
+  //   "warning",
+  //   "error",
+  //   "light",
+  //   "dark",
+  // ]),
+  color: PropTypes.string,
   count: PropTypes.number.isRequired,
   title: PropTypes.string,
   description: PropTypes.string,

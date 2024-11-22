@@ -18,7 +18,7 @@ function Counters() {
               count={3}
               suffix="+"
               title="Años de experiencia"
-              subtitle="Expertos en soluciones Salesforce en la nube"
+              subtitle="Expertos en soluciones en la nube"
               description="Contamos con especialistas altamente capacitados y con más de tres años de experiencia en el desarrollo e implementación de soluciones Salesforce.
 Nuestro equipo domina un amplio espectro de plataformas, incluyendo Sales Cloud, enfocada en la optimización del ciclo de ventas, y Service Cloud, diseñada para elevar la calidad del servicio al cliente mediante herramientas innovadoras y personalizadas."
             />

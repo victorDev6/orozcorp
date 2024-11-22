@@ -17,7 +17,7 @@ export default [
       },
       {
         image: implementacion,
-        name: "Implementación Salesforce",
+        name: "Implementación",
         count:
           "Impulsamos la transformación digital de tu negocio con proyectos integrales diseñados a medida. Aprovechamos las capacidades de las herramientas de Salesforce Customer 360, como Sales Cloud y Service Cloud, para optimizar procesos, mejorar la experiencia del cliente y acelerar el crecimiento de tu empresa. Nuestra metodología personalizada garantiza que cada solución se adapte a las necesidades y objetivos específicos de tu organización.",
         route: "/sections/page-sections/features",
