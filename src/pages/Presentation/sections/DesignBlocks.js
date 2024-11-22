@@ -33,12 +33,34 @@ function DesignBlocks() {
         <Grid container spacing={3}>
           {items.map(({ image, name, count, route, pro }) => (
             <Grid item xs={12} key={name}>
-              <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                {name}
-              </MKTypography>
-              <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                {count}
-              </MKTypography>
+              <Grid container spacing={2} alignItems="center">
+                <Grid item>
+                  <img
+                    src={image}
+                    alt={name}
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      borderRadius: "8px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </Grid>
+                <Grid item xs>
+                  <MKTypography variant="h3" fontWeight="bold" mb={1}>
+                    {name}
+                  </MKTypography>
+                  <MKTypography
+                    variant="body2"
+                    fontWeight="regular"
+                    color="secondary"
+                    mb={1}
+                    pr={2}
+                  >
+                    {count}
+                  </MKTypography>
+                </Grid>
+              </Grid>
               {/* <Link to={pro ? "/" : route}>
                 <ExampleCard image={image} name={name} count={count} pro={pro} />
               </Link> */}

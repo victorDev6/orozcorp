@@ -1,5 +1,8 @@
 const imagesPrefix =
   "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
+import quickstart from "assets/images/Quickstart.jpg";
+import soporte from "assets/images/Soporte.jpg";
+import implementacion from "assets/images/Implementación.jpg";
 
 export default [
   {
@@ -7,21 +10,21 @@ export default [
     description: "",
     items: [
       {
-        image: `${imagesPrefix}/headers.jpg`,
+        image: quickstart,
         name: "Quickstart",
         count:
           "En Orozcorp Consulting, entendemos las necesidades de pequeñas y medianas empresas que buscan una implementación rápida y efectiva de Salesforce. Por ello, ofrecemos nuestro servicio Quickstart, diseñado para desarrollar e implementar soluciones en Sales Cloud, Service Cloud y otras nubes clave en un plazo reducido. Este enfoque ágil permite a las empresas comenzar a aprovechar los beneficios de Salesforce de manera inmediata, optimizando procesos y potenciando su crecimiento desde el inicio.",
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `${imagesPrefix}/features.jpg`,
+        image: implementacion,
         name: "Implementación Salesforce",
         count:
           "Impulsamos la transformación digital de tu negocio con proyectos integrales diseñados a medida. Aprovechamos las capacidades de las herramientas de Salesforce Customer 360, como Sales Cloud y Service Cloud, para optimizar procesos, mejorar la experiencia del cliente y acelerar el crecimiento de tu empresa. Nuestra metodología personalizada garantiza que cada solución se adapte a las necesidades y objetivos específicos de tu organización.",
         route: "/sections/page-sections/features",
       },
       {
-        image: `${imagesPrefix}/pricing.jpg`,
+        image: soporte,
         name: "Consultoría y soporte",
         count:
           "Brindamos asesoría estratégica y soporte ágil para ayudarte a sacar el máximo provecho de Salesforce. Resolvemos tus consultas, optimizamos tus herramientas y potenciamos tus procesos, adaptándonos a las necesidades específicas de tu negocio. Nuestro enfoque garantiza resultados efectivos que impulsan la productividad, mejoran la experiencia del cliente y te ayudan a alcanzar tus objetivos con confianza.",
