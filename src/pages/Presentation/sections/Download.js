@@ -1,10 +1,18 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import {
+  Grid,
+  TextField,
+  Button,
+  Select,
+  MenuItem,
+  InputLabel,
+  FormControl,
+  Typography,
+  TextareaAutosize,
+} from "@mui/material";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 // import Tooltip from "@mui/material/Tooltip";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 // import MKButton from "components/MKButton";
@@ -15,10 +23,18 @@ import bgImage from "assets/images/shapes/waves-white.svg";
 
 function Download() {
   const [formData, setFormData] = useState({
-    name: "",
+    productInterest: "",
+    first_name: "",
+    last_name: "",
+    company: "",
     email: "",
-    subject: "",
-    message: "",
+    phone: "",
+    url: "",
+    description: "",
+    // name: "",
+    // email: "",
+    // subject: "",
+    // message: "",
   });
 
   const handleChange = (e) => {
@@ -63,8 +79,8 @@ function Download() {
             lg={7}
             justifyContent="center"
             mx="auto"
-            component="form"
-            onSubmit={handleSubmit}
+            // component="form"
+            // onSubmit={handleSubmit}
           >
             <MKTypography
               variant="h1"
@@ -89,102 +105,248 @@ function Download() {
             >
               Llena el siguiente formulario para enviarnos un mensaje.
             </MKTypography>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  required
-                  label="Nombre"
-                  variant="filled"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  sx={{
-                    input: {
-                      color: "lightgray",
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  required
-                  label="Correo Electrónico"
-                  variant="filled"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  sx={{
-                    input: {
-                      color: "lightgray",
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  required
-                  label="Asunto"
-                  variant="filled"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  sx={{
-                    input: {
-                      color: "lightgray",
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  required
-                  label="Mensaje"
-                  variant="filled"
-                  name="message"
-                  multiline
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  sx={{
-                    "& .MuiInputBase-root": {
-                      color: "lightgray",
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12} textAlign="center">
-                <Button type="submit" variant="contained" color="success">
-                  Enviar
-                </Button>
-              </Grid>
-            </Grid>
-          </Grid>
-
-          {/* <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
-            <MKTypography variant="h3" color="white">
-              Contacto
-            </MKTypography>
-            <MKTypography variant="body2" color="white" mb={6}>
-              Cause if you do, it can be yours for FREE. Hit the button below to navigate to
-              Creative Tim where you can find the Design System in HTML. Start a new project or give
-              an old Bootstrap project a new look!
-            </MKTypography>
-            <MKButton
-              variant="gradient"
-              color="info"
-              size="large"
-              component="a"
-              href="https://www.creative-tim.com/product/material-kit-react"
-              sx={{ mb: 2 }}
+            <form
+              action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dak00000CTZLF"
+              method="POST"
             >
-              Download Now
-            </MKButton>
-          </Grid> */}
+              <Grid container spacing={2}>
+                <input type="hidden" name="oid" value="00Dak00000CTZLF" />
+                <input
+                  type="hidden"
+                  name="retURL"
+                  value="https://www.orozcorpconsulting.com/presentation"
+                />
+
+                <Grid item xs={12}>
+                  <FormControl fullWidth>
+                    <InputLabel id="productInterest-label">Producto de Interés</InputLabel>
+                    <Select
+                      labelId="productInterest-label"
+                      id="productInterest"
+                      name="productInterest"
+                      value={formData.productInterest}
+                      onChange={handleChange}
+                      required
+                      variant="filled"
+                      sx={{
+                        color: "lightgray",
+                        ".MuiSelect-icon": { color: "lightgray" },
+                      }}
+                    >
+                      <MenuItem value="">--Seleccionar--</MenuItem>
+                      <MenuItem value="Quickstart">Quickstart</MenuItem>
+                      <MenuItem value="Implementation">Implementación</MenuItem>
+                      <MenuItem value="Support">Consultoría y Soporte</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    label="Nombre*"
+                    name="first_name"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    fullWidth
+                    required
+                    variant="filled"
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    label="Apellidos*"
+                    name="last_name"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    fullWidth
+                    required
+                    variant="filled"
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    label="Compañía*"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    fullWidth
+                    required
+                    variant="filled"
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    label="Email*"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    fullWidth
+                    required
+                    variant="filled"
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    label="Teléfono"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    fullWidth
+                    variant="filled"
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    label="Sitio Web"
+                    name="url"
+                    value={formData.url}
+                    onChange={handleChange}
+                    fullWidth
+                    variant="filled"
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                {/* <Grid item xs={12}>
+                  <Typography variant="subtitle1" gutterBottom>
+                    Comentarios adicionales
+                  </Typography>
+                  <TextareaAutosize
+                    minRows={4}
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
+                    style={{ width: "100%" }}
+                    variant="filled"
+                  />
+                </Grid> */}
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    required
+                    label="Comentarios adicionales"
+                    variant="filled"
+                    name="description"
+                    multiline
+                    rows={4}
+                    value={formData.description}
+                    onChange={handleChange}
+                    sx={{
+                      "& .MuiInputBase-root": {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <Button type="submit" variant="contained" color="success" fullWidth>
+                    Enviar
+                  </Button>
+                </Grid>
+
+                {/* <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    required
+                    label="Nombre"
+                    variant="filled"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    required
+                    label="Correo Electrónico"
+                    variant="filled"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    required
+                    label="Asunto"
+                    variant="filled"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    sx={{
+                      input: {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    required
+                    label="Mensaje"
+                    variant="filled"
+                    name="message"
+                    multiline
+                    rows={4}
+                    value={formData.message}
+                    onChange={handleChange}
+                    sx={{
+                      "& .MuiInputBase-root": {
+                        color: "lightgray",
+                      },
+                    }}
+                  />
+                </Grid> */}
+                {/* <Grid item xs={12} textAlign="center">
+                  <Button type="submit" variant="contained" color="success">
+                    Enviar
+                  </Button>
+                </Grid> */}
+              </Grid>
+            </form>
+          </Grid>
         </Container>
       </MKBox>
       {/* <Container>
