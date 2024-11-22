@@ -1,5 +1,4 @@
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
+// const imagesPrefix = "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
 import quickstart from "assets/images/Quickstart.jpg";
 import soporte from "assets/images/Soporte.jpg";
 import implementacion from "assets/images/Implementación.jpg";
@@ -32,7 +31,7 @@ export default [
       },
     ],
   },
-  {
+  /* {
     title: "Acerca de nosotros",
     description: "",
     items: [
@@ -55,7 +54,7 @@ export default [
         route: "/sections/navigation/pagination",
       },
     ],
-  },
+  }, */
   /* {
     title: "Input Areas",
     description: "50+ elements that you need for text manipulation and insertion",
