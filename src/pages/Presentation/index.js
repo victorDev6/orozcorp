@@ -56,20 +56,20 @@ function Presentation() {
           backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
-          "&::before": {
-            content: '""',
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "75%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Capa negra con opacidad
-            zIndex: 1, // Sitúa la capa debajo del contenido
-          },
-          "& > *": {
-            position: "relative", // Asegura que el contenido quede sobre la capa oscura
-            zIndex: 2,
-          },
+          // "&::before": {
+          //   content: '""',
+          //   position: "absolute",
+          //   top: 0,
+          //   left: 0,
+          //   width: "100%",
+          //   height: "75%",
+          //   backgroundColor: "rgba(0, 0, 0, 0.5)", // Capa negra con opacidad
+          //   zIndex: 1, // Sitúa la capa debajo del contenido
+          // },
+          // "& > *": {
+          //   position: "relative", // Asegura que el contenido quede sobre la capa oscura
+          //   zIndex: 2,
+          // },
         }}
       >
         <MKBox
