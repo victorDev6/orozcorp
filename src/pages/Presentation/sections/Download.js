@@ -23,7 +23,7 @@ import bgImage from "assets/images/shapes/waves-white.svg";
 
 function Download() {
   const [formData, setFormData] = useState({
-    productInterest: "",
+    // 00Nak00000EULfG: "",
     first_name: "",
     last_name: "",
     company: "",
@@ -117,7 +117,7 @@ function Download() {
                   value="https://www.orozcorp-innovations.com/presentation"
                 />
 
-                <Grid item xs={12}>
+                {/* <Grid item xs={12}>
                   <FormControl fullWidth>
                     <InputLabel id="productInterest-label">Producto de Interés</InputLabel>
                     <Select
@@ -139,7 +139,8 @@ function Download() {
                       <MenuItem value="Support">Consultoría y Soporte</MenuItem>
                     </Select>
                   </FormControl>
-                </Grid>
+                </Grid> */}
+
                 <Grid item xs={12} sm={6}>
                   <TextField
                     label="Nombre"
