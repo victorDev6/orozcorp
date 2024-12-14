@@ -12,7 +12,7 @@ export default [
         image: quickstart,
         name: "Quickstart",
         count:
-          "En Orozcorp Consulting, entendemos las necesidades de pequeñas y medianas empresas que buscan una implementación rápida y efectiva de Salesforce. Por ello, ofrecemos nuestro servicio Quickstart, diseñado para desarrollar e implementar soluciones en Sales Cloud, Service Cloud y otras nubes clave en un plazo reducido. Este enfoque ágil permite a las empresas comenzar a aprovechar los beneficios de Salesforce de manera inmediata, optimizando procesos y potenciando su crecimiento desde el inicio.",
+          "En Orozcorp Innovations, entendemos las necesidades de pequeñas y medianas empresas que buscan una implementación rápida y efectiva de Salesforce. Por ello, ofrecemos nuestro servicio Quickstart, diseñado para desarrollar e implementar soluciones en Sales Cloud, Service Cloud y otras nubes clave en un plazo reducido. Este enfoque ágil permite a las empresas comenzar a aprovechar los beneficios de Salesforce de manera inmediata, optimizando procesos y potenciando su crecimiento desde el inicio.",
         route: "/sections/page-sections/page-headers",
       },
       {

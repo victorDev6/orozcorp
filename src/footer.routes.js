@@ -74,7 +74,7 @@ export default {
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      Todos los derechos reservados. Copyright &copy; {date} Orozcorp Consulting.
+      Todos los derechos reservados. Copyright &copy; {date} Orozcorp Innovations.
     </MKTypography>
   ),
 };
