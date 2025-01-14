@@ -79,7 +79,10 @@ function Presentation() {
           position="center"
           top={0}
           left={0}
-          width="50%"
+          width="30%"
+          sx={{
+            marginBottom: "40px",
+          }}
         />
 
         {/* <Container>

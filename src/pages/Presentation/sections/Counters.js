@@ -26,8 +26,8 @@ Nuestro equipo domina un amplio espectro de plataformas, incluyendo Sales Cloud,
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
-              count={8}
-              // suffix="+"
+              count={10}
+              suffix="+"
               title="Certificaciones"
               subtitle="Excelencia técnica respaldada por credenciales reconocidas"
               description="Nuestro equipo está compuesto por profesionales certificados en Salesforce, lo que garantiza un dominio integral de la plataforma y una capacidad comprobada para ofrecer soluciones de alto impacto.
